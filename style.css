@@ -1,0 +1,74 @@
+.tooth{
+    position: absolute;
+    left: 475px;
+    transform: rotate(197deg);
+    top: 250px;
+    animation: abc 1s linear infinite;
+}
+
+.tom{
+    position: absolute;
+    left: 475px;
+    top: 120px;
+}
+
+@keyframes abc{
+    0%{left: 390px;}
+    50%{left: 480px;}
+    100%{left: 390px;}
+}
+
+@media screen and (max-width:500px) and (min-width:400px){
+    .tom{
+    width: 300px;
+    position: absolute;
+    left: 75px;
+    top: 300px;
+    }
+    .tooth{
+    width: 300px;
+    top: 365px;
+    }
+    @keyframes abc{
+        0%{left: -25px;}
+        50%{left: 40px;}
+        100%{left: -25px;}
+    }
+}
+
+@media screen and (max-width:400px) and (min-width:300px){
+    .tom{
+    width: 250px;
+    position: absolute;
+    left: 40px;
+    top: 250px;
+    }
+    .tooth{
+    width: 250px;
+    top: 310px;
+    }
+    @keyframes abc{
+        0%{left: -30px;}
+        50%{left: 40px;}
+        100%{left: -30px;}
+    }
+}
+
+
+@media screen and (max-width:900px) and (min-width:800px){
+    .tom{
+    width: 350px;
+    position: absolute;
+    left: 220px;
+    top: 250px;
+    }
+    .tooth{
+    width: 275px;
+    top: 350px;
+    }
+    @keyframes abc{
+        0%{left: 180px;}
+        50%{left: 250px;}
+        100%{left: 180px;}
+    }
+}
